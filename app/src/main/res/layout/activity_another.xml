@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AnotherActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/another_image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText"
+        android:text="Title Text"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@id/another_image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleDesc"
+        android:text="Descripción Text"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/titleText"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleDesc"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lin">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/che"
+            android:layout_below="@id/titleDesc"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="40dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleDesc"
+            android:layout_marginTop="40dp"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:text="Acepto los terminos y condiciones."/>
+    </LinearLayout>
+
+
+    <Button android:text="Pedir"
+        android:id="@+id/btnpedir"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_below="@id/lin"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_login_button"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
